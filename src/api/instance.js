@@ -1,0 +1,10 @@
+import axios from "axios";
+
+const API_KEY =
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IktYMk40TkRDSTJ5NTA5NWpjTWk5TllqY2lyZyIsImtpZCI6IktYMk40TkRDSTJ5NTA5NWpjTWk5TllqY2lyZyJ9.eyJpc3MiOiJodHRwczovL2x1ZHkuZ2FtZS5vbnN0b3ZlLmNvbSIsImF1ZCI6Imh0dHBzOi8vbHVkeS5nYW1lLm9uc3RvdmUuY29tL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IjEwMDAwMDAwMDAzNzY2MDgifQ.JMpXYuHmJQ82Ca9EQE2QIFp-Rp-umiLjo9CIee9zI7gaEec1H6MyvvXtt1w7ShPvXYtfXtzQsTupSB7e3vvsJHZvPrgpmu--UI_NEJ-0YZ7PN5vB4NNCAam0vaEJSAcm0kaSTHBgucs6Mf0UXw9J79b8j4UnbLliAoKNsccGzFFdGeRwqHjEVDOzOIBwFsJWmu1FuzNOdMtFJzSxqjjd8O22SzIh14SWg5kzDS1_lUhzJpqjPF8OmtzzaJqEmeznrww8XJv6mTS7_QQfJjtrdWB8yclS0J_D2n6bW1NCtIi0LV2alMYvGEJ8ubo14vwr-qi25TFj0oLYL7VXZSAVnA";
+
+export default instance = axios.create({
+  baseURL: "https://developer-lostark.game.onstove.com/",
+  params: {},
+  headers: { Authorization: `Bearer ${API_KEY}` },
+});
